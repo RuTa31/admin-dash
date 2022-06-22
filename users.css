@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --main-color: rgb(48,48,48);
+    --bg-color: rgb(31,31,31);
+}
+body {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+.sidebar {
+    width: 85px;
+    background-color: var(--main-color);
+    height: 100vh;
+    position: fixed;
+}
+.sidebar.active {
+    width: 240px;
+}
+
+.logo_content {
+    height: 68px;
+    background-color: var(--bg-color);
+}
+.logo_content .logo {
+    color: #fff;
+    /* color: var(--bg-color); */
+    /* display: none; */
+    display: flex; 
+    background-color: var(--bg-color);
+    padding: 20px;
+    
+}
+
+.logo_content .btn_toggle {
+    position: absolute;
+    color: whitesmoke;
+    right: 17px;
+    top: 7px;
+    font-size: 26px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.sidebar ul {
+    padding: 20px;
+}
+.sidebar ul li {
+    list-style: none;
+}
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    padding: 10px;
+    transition: .4s erasy;
+}
+.sidebar ul li a:hover {
+    background-color: #fff;
+    color: rgb(20, 20, 20);
+    border-radius: 5px;
+}
+.sidebar ul li a i {
+    padding-right: 25px;
+    font-size: 24px;
+}
+.sidebar ul li a span {
+    display: none;
+}
+.sidebar.active ul li a span {
+    display: block;
+}
+/* main heseg */
+.news_page {
+    position: relative;
+    left: 85px;
+    width: calc(100% - 85px);
+    background-color: rgb(233, 233, 233);
+    height: 100vh;
+    /* padding: 20px; */
+    background-color: rgb(187, 180, 180);
+}
+
+
+
+/******************************************** news page *********************************************/
+.page_navbar {
+    height: 68px;
+    width: 100%;
+    background-color: rgb(47, 44, 44);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.mini_button {
+    background-color: rgb(47, 44, 44);
+    margin-right: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+
+}
+.mini_icon {
+    color: #fff;
+}
+.bxl-facebook-circle:hover {
+    color: rgb(18, 129, 227);
+}
+.bxl-instagram-alt:hover {
+    color: rgb(233, 130, 46);
+}
+.bx-power-off:hover {
+    color: red;
+}
+/* ************************************* header text ******************************** */
+
+.header_text {
+    width: 100%;
+    height: 50px;
+    /* background-color: rgb(177, 128, 128); */
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+}
+.headerText {
+    margin-left: 2%;
+}
+/* ************************************ page**************************** */ 
+.todo_list {
+    background-color: rgb(67, 67, 68);
+    /* height: 500px; */
+    overflow: auto;
+}    
+table {
+    /* width: 100%; */
+    width: calc(100% - 80px);
+    height: calc(100% - 20px);
+    /* table-layout: fixed; */
+    border-collapse: collapse;
+    margin: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 25px;
+}
+thead th {
+    /* position: static; */
+    background-color: #0d4f85;
+    color: #8493a5;
+    font-size: 15px;
+}
+th, td {
+    /* border: 1px solid rgb(10, 10, 10); */
+    border-bottom: 1px solid rgb(15, 15, 15);
+    padding: 10px;
+    word-break: break-all;
+    text-align: center;
+}
+td img {
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 5px solid #ced0d2;
+}
+.bx-block {
+    font-size: 30px;
+    color: red;
+}
+.bx-block:hover {
+    font-size: 40px;
+    color: rgb(241, 234, 234);
+}
+.bxs-trash {
+    font-size: 30px;
+    color: black;
+}
+.bxs-trash:hover {
+    font-size: 40px;
+    color: rgb(241, 234, 234);
+}
+tr:hover {
+    color: #fcfcfc;
+    font-weight: bold;
+}
+
+
